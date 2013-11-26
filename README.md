@@ -1,5 +1,4 @@
 IPython-plotly: Interactive Graphs
-
 ======
 
 Use Plotly's scientific graphing libraries and Ipython to make and share interactive, publication-quality graphs
