@@ -7,12 +7,13 @@ in your web browser. Its the NYT graphics deptartment inside your IPython notebo
 IPython-Plotly Notebooks on NBViewer
 -----------------------------
 
-- [Basic graph examples](http://nbviewer.ipython.org/7576511) Get started here.
+- [Basic graph examples](http://nbviewer.ipython.org/7576511) Get started here. Try zooming and panning inside the graphs.
 
 - [Multiple axes, subplots, and insets](http://nbviewer.ipython.org/7628933) Get crazy with scientific graphing here.
  
-- [IJulia example](http://nbviewer.ipython.org/7551139) Check out the bleeding edge here.
+- [IJulia example](http://nbviewer.ipython.org/7551139) IJulia rocks! So does Plotly. Check it out.
 
+- [Bubble Charts and Hover Text](http://nbviewer.ipython.org/gist/jackparmer/7729584) Psychedelic spirals, crime data, Hans Rosling, data slicing with Pandas, and more.
 
 Gallery Examples
 -------------
@@ -25,7 +26,7 @@ Want more? Find these examples and the code used to create at [https://plot.ly/a
 Installation
 ------------
 
-Follow easy installation instructions and choose your language at [https://plot.ly/api/python](https://plot.ly/api/python)
+Follow easy installation instructions at [https://plot.ly/api/python](https://plot.ly/api/python)
 
 Development
 -----------
@@ -37,14 +38,11 @@ Connecting
 
 You can also connect with us on [Facebook](facebook.com/plotly), [Twitter](https://twitter.com/plotlygraphs), and [Google +](https://plus.google.com/+PlotLy)
 
-Feedback
+Some Feedback
 ----------------------
 
-"Plotly was key for getting NASA approval to launch a CubeSat for space exploration." 
--Professor Carl Brandon, Vermont Technical College
+"Plotly was key for getting NASA approval to launch a CubeSat for space exploration." -Professor Carl Brandon, Vermont Technical College
 
-"Plotly is my absolute favorite way to communicate data and complex ideas to my readers." 
--Dylan Matthews, Columnist and Data Journalist, Washington Post
+"Plotly is my absolute favorite way to communicate data and complex ideas to my readers."  -Dylan Matthews, Columnist and Data Journalist, Washington Post
 
-"I am using the Plotly Chrome App to teach high school students how scientists really analyze and present data. This app goes well beyond anything else we have been able to find."
--Dr. Michael Frank, 2011 Recipient, Presidential Award for Excellence in Mathematics and Science Teaching
+"@plotlygraphs Continues to kick ass with their latest release of their plotting api. Multiple coordinated charts rock!" -Stanford robotics guru
