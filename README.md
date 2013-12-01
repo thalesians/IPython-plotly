@@ -18,7 +18,7 @@ IPython-Plotly Notebooks on NBViewer
 Gallery Examples
 -------------
 
-Want more? Find these examples and the code used to create at [https://plot.ly/api/python](https://plot.ly/api/python)
+Want more? Find these examples and the code used to create them at [https://plot.ly/api/python](https://plot.ly/api/python)
 
 
   ![](https://f.cloud.github.com/assets/5034604/1587845/c6098d92-5242-11e3-816e-10d96a545efa.png "Example plots")
