@@ -1,29 +1,23 @@
-IPython-plotly: Interactive Graphs
+IPython-Plotly: Interactive Graphs
 ======
 
-Use Plotly's scientific graphing libraries and Ipython to make and share interactive, publication-quality graphs
-in your web browser. That means you can interface Plotly's online graphing tools with IPython, easily sending or streaming data to your Notebook, and making interactive, shareable graphs in IPython. 
+Use Plotly's scientific graphing libraries and IPython to make interactive, publication-quality graphs
+in your web browser. Its the NYT graphics deptartment inside your IPython notebook. Lets do this.
 
-And Plotly also makes it easy to post and share your data and graphs, together, publicly with a url or privately with your team.
+IPython-Plotly Notebooks on NBViewer
+-----------------------------
 
-Examples 
---------
+- [Basic graph examples](http://nbviewer.ipython.org/7576511) Get started here.
 
-You can also use Plotly and IPython to make interactive graphs. 
-
-- A [Plotly demo](http://nbviewer.ipython.org/7576511) on using the [Plotly graphing API](https://plot.ly/api/Python) to make interactive, collaborative, publication-quality graphs, explained more fully by this [talk](https://www.youtube.com/watch?v=zG8FYPFU9n4).
-
-- A [Plotly tutorial](http://nbviewer.ipython.org/7628933) on using the [Plotly graphing API](https://plot.ly/api/Python) to graphs with multiple axes, subplots, and insets. 
-
-- A [demonstration and tutorial](http://nbviewer.ipython.org/7551139) on making interactive graphs with [Plotly](https://plot.ly/) and Julia.
-
-- [Plotly graphs in the Washington Post, embedded as an iframe](www.washingtonpost.com/blogs/wonkblog/wp/2013/06/14/do-low-taxes-on-the-rich-leave-the-middle-class-with-lower-wages/)
+- [Multiple axes, subplots, and insets](http://nbviewer.ipython.org/7628933) Get crazy with scientific graphing here.
+ 
+- [IJulia example](http://nbviewer.ipython.org/7551139) Check out the bleeding edge here.
 
 
 Gallery Examples
 -------------
 
-Find these examples and the code used to create them [here](https://plot.ly/api)
+Want more? Find these examples and the code used to create at [https://plot.ly/api/python](https://plot.ly/api/python)
 
 
   ![](https://f.cloud.github.com/assets/5034604/1587845/c6098d92-5242-11e3-816e-10d96a545efa.png "Example plots")
@@ -31,12 +25,12 @@ Find these examples and the code used to create them [here](https://plot.ly/api)
 Installation
 ------------
 
-Follow easy installation instructions and choose your language [on the Plot.ly site](https://plot.ly/api/)
+Follow easy installation instructions and choose your language at [https://plot.ly/api/python](https://plot.ly/api/python)
 
 Development
 -----------
 
-Please submit any bugs you encounter to feedback@plot.ly. For dashboard uses, see [Plotly.js](https://plot.ly/developers)
+Please submit any bugs you encounter to feedback@plot.ly. For private dashboard uses, see [plotly.js](https://plot.ly/developers)
 
 Connecting
 -----------
