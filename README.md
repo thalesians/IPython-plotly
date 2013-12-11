@@ -2,18 +2,11 @@ IPython-Plotly: Interactive Graphs
 ======
 
 Use Plotly's scientific graphing libraries and IPython to make interactive, publication-quality graphs
-in your web browser. Its the NYT graphics deptartment inside your IPython notebook. Lets do this.
+in your web browser. It's the NYT graphics department inside your IPython notebook.
 
-IPython-Plotly Notebooks on NBViewer
+[IPython-Plotly Notebooks on NBViewer](http://nbviewer.ipython.org/github/plotly/IPython-plotly/tree/master/)
 -----------------------------
 
-- [Basic graph examples](http://nbviewer.ipython.org/7576511) Get started here. Try zooming and panning inside the graphs.
-
-- [Multiple axes, subplots, and insets](http://nbviewer.ipython.org/7628933) Get crazy with scientific graphing here.
- 
-- [IJulia example](http://nbviewer.ipython.org/7551139) IJulia rocks! So does Plotly. Check it out.
-
-- [Bubble Charts and Hover Text](http://nbviewer.ipython.org/gist/jackparmer/7729584) Psychedelic spirals, crime data, Hans Rosling, data slicing with Pandas, and more.
 
 Gallery Examples
 -------------
