@@ -1,0 +1,111 @@
+{
+ "metadata": {
+  "name": "LaTeX in Plotly graphs"
+ },
+ "nbformat": 3,
+ "nbformat_minor": 0,
+ "worksheets": [
+  {
+   "cells": [
+    {
+     "cell_type": "markdown",
+     "metadata": {},
+     "source": "<h1>Plotly graphs with LaTeX</h1>"
+    },
+    {
+     "cell_type": "markdown",
+     "metadata": {},
+     "source": "<h4>IPython supports lovely Latex typesetting through <a href=\"http://www.mathjax.org/\">MathJax:</a></h4>"
+    },
+    {
+     "cell_type": "markdown",
+     "metadata": {},
+     "source": "$$\\sum_{k=0}^{\\infty} \\frac {(-1)^k x^{1+2k}}{(1 + 2k)!}$$"
+    },
+    {
+     "cell_type": "markdown",
+     "metadata": {},
+     "source": "<h4>And Plotly has jumped on the boat! Plotly graphs now process Latex markup. Below are some examples.<br><br>Questions? Issues? jack [at] plot [dot] ly</h4>"
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": "import plotly\nimport math\nimport random\nimport numpy as np",
+     "language": "python",
+     "metadata": {},
+     "outputs": [],
+     "prompt_number": 73
+    },
+    {
+     "cell_type": "markdown",
+     "metadata": {},
+     "source": "<h4>To get hooked up with a free Plotly account, go <a href=\"https://plot.ly/api/python\">here</a></h4>"
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": "un='jackp'\nk='11m2qbzob9'\npy = plotly.plotly(username=un, key=k)",
+     "language": "python",
+     "metadata": {},
+     "outputs": [],
+     "prompt_number": 4
+    },
+    {
+     "cell_type": "markdown",
+     "metadata": {},
+     "source": "<h2>Example 1: Taylor Series for Sine</h2>"
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": "def sin(x,n):\n\tsine = 0\n\tfor i in range(n):\n\t\tsign = (-1)**i\n\t\tsine = sine + ((x**(2.0*i+1))/math.factorial(2*i+1))*sign\n\treturn sine\n\nx = np.arange(-12,12,0.1)\n\nanno = {\n    'text': '$\\\\sum_{k=0}^{\\\\infty} \\\\frac {(-1)^k x^{1+2k}}{(1 + 2k)!}$',\n    'x': 0.3, 'y': 0.6,'xref': \"paper\", 'yref': \"paper\",'showarrow': False,\n    'font':{'size':24}\n}\n\nl = {\n    'annotations': [anno], \n    'title': 'Taylor series of sine',\n    'xaxis':{'ticks':'','linecolor':'white','showgrid':False,'zeroline':False},\n    'yaxis':{'ticks':'','linecolor':'white','showgrid':False,'zeroline':False},\n    'legend':{'font':{'size':16},'bordercolor':'white','bgcolor':'#fcfcfc'}\n}\n\npy.iplot([{'x':x, 'y':sin(x,1), 'line':{'color':'#e377c2'}, 'name':'$x\\\\\\\\$'},\\\n          {'x':x, 'y':sin(x,2), 'line':{'color':'#7f7f7f'},'name':'$ x-\\\\frac{x^3}{6}$'},\\\n          {'x':x, 'y':sin(x,3), 'line':{'color':'#bcbd22'},'name':'$ x-\\\\frac{x^3}{6}+\\\\frac{x^5}{120}$'},\\\n          {'x':x, 'y':sin(x,4), 'line':{'color':'#17becf'},'name':'$ x-\\\\frac{x^5}{120}$'}], layout=l)",
+     "language": "python",
+     "metadata": {},
+     "outputs": [
+      {
+       "output_type": "stream",
+       "stream": "stdout",
+       "text": "\n\n\n"
+      },
+      {
+       "html": "<iframe height=\"650\" id=\"igraph\" scrolling=\"no\" seamless=\"seamless\" src=\"https://plot.ly/~jackp/1404/600/600\" width=\"650\"></iframe>",
+       "metadata": {},
+       "output_type": "pyout",
+       "prompt_number": 68,
+       "text": "<IPython.core.display.HTML at 0x1037c7490>"
+      }
+     ],
+     "prompt_number": 68
+    },
+    {
+     "cell_type": "markdown",
+     "metadata": {},
+     "source": "<h2>Example 2: Colors, Size, and Opacity</h2>"
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": "identity_of_ramanujan = '$ \\\\frac{1}{\\\\Bigl(\\sqrt{\\\\phi \\\\sqrt{5}}-\\\\phi\\\\Bigr) e^{\\\\frac25 \\\\pi}} = 1+\\\\frac{e^{-2\\\\pi}} {1+\\\\frac{e^{-4\\\\pi}} {1+\\\\frac{e^{-6\\\\pi}}{1+\\\\frac{e^{-8\\\\pi}} {1+\\\\ldots} } } } $'\nannotations = []\n\nfor i in range(17):\n    x = random.random()\n    y = random.random()\n    s = random.random()*36 \n    o = random.random()\n    c = random.randint(0,4)\n    colors = ['#9467bd', '#17becf', '#e377c2', '#bcbd22', '#17becf' ]\n    anno = {\n        'text': identity_of_ramanujan,\n        'x': x, 'y': y,'xref': \"paper\", 'yref': \"paper\",'showarrow': False,\n        'opacity':o,'font':{'size':s,'color':colors[c]}\n    }\n    annotations.append(anno)\n\nl = {\n    'annotations': annotations, \n    'title': '$\\\\LaTeX$',\n    'titlefont': {'size':32},\n    'xaxis':{'showticklabels':False,'ticks':'','linecolor':'white','showgrid':False,'zeroline':False},\n    'yaxis':{'showticklabels':False,'ticks':'','linecolor':'white','showgrid':False,'zeroline':False},\n    'legend':{'font':{'size':16},'bordercolor':'white','bgcolor':'#fcfcfc'}\n}\n    \npy.iplot([{}], layout=l)",
+     "language": "python",
+     "metadata": {},
+     "outputs": [
+      {
+       "output_type": "stream",
+       "stream": "stdout",
+       "text": "\n\n\n"
+      },
+      {
+       "html": "<iframe height=\"650\" id=\"igraph\" scrolling=\"no\" seamless=\"seamless\" src=\"https://plot.ly/~jackp/1382/600/600\" width=\"650\"></iframe>",
+       "metadata": {},
+       "output_type": "pyout",
+       "prompt_number": 112,
+       "text": "<IPython.core.display.HTML at 0x102357750>"
+      }
+     ],
+     "prompt_number": 112
+    }
+   ],
+   "metadata": {}
+  }
+ ]
+}
