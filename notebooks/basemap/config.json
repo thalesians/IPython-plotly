@@ -1,0 +1,15 @@
+{
+    "title": "Plotly maps with Matplotlib Basemap",
+    "title_short": "Plotly maps",
+    "meta_description": "An IPython Notebook showing how to make an interactive world map using plotly and Maplotlib Basemap",
+    "relative_url": "basemap-maps",
+    "cells": [2, -5],
+    "thumbnail_image": "",
+    "non_pip_deps": [
+        {
+            "name": "" ,
+            "urls": "", 
+            "description": ""
+        }
+    ]
+}
