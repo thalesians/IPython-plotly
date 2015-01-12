@@ -1,0 +1,9 @@
+{
+    "meta_description": "An IPython Notebook showing how to collaboration between different programming languages with plotly", 
+    "github_url": "https://github.com/plotly/IPython-plotly/blob/master/collaborate", 
+    "title_short": "Collaboration with Plotly", 
+    "last_modified": "Monday 12 January 2015", 
+    "file_ipynb": "https://raw.githubusercontent.com/plotly/IPython-plotly/master/collaborate/collaborate.ipynb", 
+    "title": "Collaboration with Plotly using Python, R and MATLAB", 
+    "file_py": "https://raw.githubusercontent.com/plotly/IPython-plotly/master/collaborate/collaborate.py"
+}
