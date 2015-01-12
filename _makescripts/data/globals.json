@@ -1,0 +1,12 @@
+{
+    "NOTEBOOKS": "notebooks",
+    "PUBLISHED": "_published",
+    "STREAMBED": {
+        "image": "/static/api_docs/image/ipython_notebooks/",
+        "includes": "api_docs/includes/ipython_notebooks/"
+    },
+    "GITHUB": {
+        "page": "https://github.com/plotly/IPython-plotly/blob/master/",
+        "raw": "https://raw.githubusercontent.com/plotly/IPython-plotly/master/"
+    }
+}
