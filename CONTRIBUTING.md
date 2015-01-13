@@ -1,3 +1,5 @@
+## General info
+
 
 #### Repo structure
 
@@ -44,8 +46,29 @@ IPython-plotly/
 
 `notebooks/<some-notebook>/config.json`
 
-See [model]().
+See [model](_makescripts/data/config-init.json).
  
+#### References file
+
+`notebooks/references.json` 
+
+Simply fill in the notebook id. 
+
+```json
+{
+    "notebooks": [
+        "basemap",
+        "collaborate"
+    ]
+}
+```
+
+These *need* to be hard-coded in order to preserve the order in which they will apper on the splash page.
+
+
+## How to add a notebook?
+
+#### Step 0: Make a directory and add ipynb file
 
 #### Step 1: Install requirements
 
@@ -53,32 +76,36 @@ See [model]().
 pip install -r requirements.txt
 ```
 
+#### Step 2: 
 
-
-#### References files
-
-##### Domain references (auto-generated)
-
-[`_published/includes/references.json`](...)
-
-
-##### Notebook references (auto-generated)
-
-`published/includes/<some-notebook>/references.json`
-
-```json
-{
-    last_modified: '',
-    name: (copied over from notebooks/),
-    title: (copied over from notebooks/),
-    meta_description: (copied over from notebooks/),
-    file_ipynb: 'link to ipynb file',
-    file_py: 'link to py file',
-    file_zip: false or 'link to zip file (w/ data file)',
-    requirements: [
-        <some-python-package>: version-number,
-        ...
-    ],
-    non_pip_deps: [] (copied form notebooks/)
-}
 ```
+make init nb=<notebook-id>
+```
+
+and fill in `config.json` (don't forget to remove the comments from the json file).
+
+#### Step 3:
+
+```
+make run nb=<notebook-id>
+```
+
+This creates an `html` and `py` version of the notebook
+
+
+#### Step 4:
+
+```
+make publish nb=<notebook-id>
+```
+
+This puts the html into publishable form, generates the `urls.py` and `sitemaps.py` files and appends the config and references files with auto-generatable fields.
+
+
+#### Step 5:
+
+```
+make push
+```
+
+Pushes the published content over to streambed
