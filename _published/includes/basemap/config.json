@@ -1,9 +1,9 @@
 {
     "meta_description": "An IPython Notebook showing how to make an interactive world map using plotly and Maplotlib Basemap", 
-    "github_url": "https://github.com/plotly/IPython-plotly/blob/master/basemap", 
+    "github_url": "https://github.com/plotly/IPython-plotly/blob/master/notebooks/basemap", 
     "title_short": "Plotly maps", 
     "last_modified": "Monday 12 January 2015", 
-    "file_ipynb": "https://raw.githubusercontent.com/plotly/IPython-plotly/master/basemap/basemap.ipynb", 
+    "file_ipynb": "https://raw.githubusercontent.com/plotly/IPython-plotly/master/notebooks/basemap/basemap.ipynb", 
     "title": "Plotly maps with Matplotlib Basemap", 
-    "file_py": "https://raw.githubusercontent.com/plotly/IPython-plotly/master/basemap/basemap.py"
+    "file_py": "https://raw.githubusercontent.com/plotly/IPython-plotly/master/notebooks/basemap/basemap.py"
 }

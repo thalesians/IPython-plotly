@@ -99,17 +99,18 @@ def add_in_out_anchors(body):
 def append_config(config, arg, path_handler):
 
     now = datetime.datetime.now().strftime("%A %d %B %Y")
-    github_page = path_handler.GLOBALS['GITHUB']['page'] + arg
-    github_raw = path_handler.GLOBALS['GITHUB']['raw'] + arg
+    NOTEBOOKS = path_handler.GLOBALS['NOTEBOOKS']
+    github_page = path_handler.GLOBALS['GITHUB']['page'] + NOTEBOOKS
+    github_raw = path_handler.GLOBALS['GITHUB']['raw'] + NOTEBOOKS
 
     config = dict(
         last_modified=now,
         title=config['title'],
         title_short=config['title_short'],
         meta_description=config['meta_description'],
-        github_url=github_page,
-        file_ipynb=github_raw + '/' + arg + '.ipynb',
-        file_py=github_raw + '/' + arg + '.py',
+        github_url=github_page + '/' + arg,
+        file_ipynb=github_raw + '/' + arg + '/' + arg + '.ipynb',
+        file_py=github_raw + '/' + arg + '/' + arg + '.py',
     )
 
     return config
