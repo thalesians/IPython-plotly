@@ -1,0 +1,30 @@
+{
+    "paths": {
+        "collaborate": {
+            "body": "api_docs/includes/ipython_notebooks/collaborate/body.html", 
+            "config": "api_docs/includes/ipython_notebooks/collaborate/config.json"
+        }, 
+        "basemap": {
+            "body": "api_docs/includes/ipython_notebooks/basemap/body.html", 
+            "config": "api_docs/includes/ipython_notebooks/basemap/config.json"
+        }
+    }, 
+    "splash": [
+        {
+            "title_short": "Plotly maps", 
+            "thumbnail_image": "", 
+            "relative_url": "basemap-maps", 
+            "title": "Plotly maps with Matplotlib Basemap"
+        }, 
+        {
+            "title_short": "Collaboration with Plotly", 
+            "thumbnail_image": "", 
+            "relative_url": "collaboration", 
+            "title": "Collaboration with Plotly using Python, R and MATLAB"
+        }
+    ], 
+    "notebooks": [
+        "basemap", 
+        "collaborate"
+    ]
+}

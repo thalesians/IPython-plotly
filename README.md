@@ -1,6 +1,12 @@
-These notebooks have moved! Check out [https://plot.ly/python/](https://plot.ly/python/) for our latest documentation.
+Plotly IPython Notebooks
+========================
 
-Questions? <feedback@plot.ly>, [@plotlygraphs](https://twitter.com/plotlygraphs)
+See them on [plot.ly](http://plot.ly/ipython-notebooks).
+
+
+#####Questions?
+
+<feedback@plot.ly>, [@plotlygraphs](https://twitter.com/plotlygraphs)
 
 ![Plotly logo](http://i.imgur.com/4vwuxdJ.png)
 

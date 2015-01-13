@@ -1,0 +1,15 @@
+{
+    "title": "Collaboration with Plotly using Python, R and MATLAB",
+    "title_short": "Collaboration with Plotly",
+    "meta_description": "An IPython Notebook showing how to collaboration between different programming languages with plotly",
+    "relative_url": "collaboration",
+    "cells": [2, -1],
+    "thumbnail_image": "",
+    "non_pip_deps": [
+        {
+            "name": "" ,
+            "urls": "", 
+            "description": ""
+        }
+    ]
+}

@@ -2,3 +2,6 @@ Untitled*
 *-checkpoint.ipynb
 .ipynb_checkpoints
 *~
+*.pyc
+*.tmp.ipynb
+*.tmp.html
