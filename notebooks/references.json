@@ -1,7 +1,7 @@
 {
     "notebooks": [
+        "make_subplots",
         "basemap",
-        "collaborate",
-	"make_subplots"
+        "collaborate"
     ]
 }
