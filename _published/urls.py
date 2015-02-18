@@ -5,6 +5,11 @@ from api_docs.views import IPythonNotebookPage
 
 urlpatterns = patterns(
     '',
+    url("subplots/$",
+        IPythonNotebookPage.as_view(
+            lang='ipython-notebooks',
+            notebook='make_subplots'),
+        name='ipython-notebook-make_subplots'),
     url("basemap-maps/$",
         IPythonNotebookPage.as_view(
             lang='ipython-notebooks',
@@ -14,10 +19,5 @@ urlpatterns = patterns(
         IPythonNotebookPage.as_view(
             lang='ipython-notebooks',
             notebook='collaborate'),
-        name='ipython-notebook-collaborate'),
-    url("subplots/$",
-        IPythonNotebookPage.as_view(
-            lang='ipython-notebooks',
-            notebook='make_subplots'),
-        name='ipython-notebook-make_subplots')
+        name='ipython-notebook-collaborate')
 )

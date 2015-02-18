@@ -15,6 +15,12 @@
     }, 
     "splash": [
         {
+            "title_short": "subplots", 
+            "thumbnail_image": "", 
+            "relative_url": "subplots", 
+            "title": "Python Subplots with Plotly and make_subplots"
+        }, 
+        {
             "title_short": "Plotly maps", 
             "thumbnail_image": "", 
             "relative_url": "basemap-maps", 
@@ -25,17 +31,11 @@
             "thumbnail_image": "", 
             "relative_url": "collaboration", 
             "title": "Collaboration with Plotly using Python, R and MATLAB"
-        }, 
-        {
-            "title_short": "subplots", 
-            "thumbnail_image": "", 
-            "relative_url": "subplots", 
-            "title": "Python Subplots with Plotly and make_subplots"
         }
     ], 
     "notebooks": [
+        "make_subplots", 
         "basemap", 
-        "collaborate", 
-        "make_subplots"
+        "collaborate"
     ]
 }

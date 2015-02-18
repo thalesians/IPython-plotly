@@ -1,9 +1,6 @@
 
 # coding: utf-8
 
-# # Subplots and small multiples
-# ## with plotly and `plotly.tools.make_subplots`
-
 # In[1]:
 
 from plotly import tools        # functions to help build plotly graphs
