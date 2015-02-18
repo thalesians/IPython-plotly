@@ -1,5 +1,9 @@
 {
     "paths": {
+        "make_subplots": {
+            "body": "api_docs/includes/ipython_notebooks/make_subplots/body.html", 
+            "config": "api_docs/includes/ipython_notebooks/make_subplots/config.json"
+        }, 
         "collaborate": {
             "body": "api_docs/includes/ipython_notebooks/collaborate/body.html", 
             "config": "api_docs/includes/ipython_notebooks/collaborate/config.json"
@@ -10,6 +14,12 @@
         }
     }, 
     "splash": [
+        {
+            "title_short": "subplots", 
+            "thumbnail_image": "", 
+            "relative_url": "subplots", 
+            "title": "Python Subplots with Plotly and make_subplots"
+        }, 
         {
             "title_short": "Plotly maps", 
             "thumbnail_image": "", 
@@ -24,6 +34,7 @@
         }
     ], 
     "notebooks": [
+        "make_subplots", 
         "basemap", 
         "collaborate"
     ]
