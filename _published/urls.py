@@ -14,5 +14,10 @@ urlpatterns = patterns(
         IPythonNotebookPage.as_view(
             lang='ipython-notebooks',
             notebook='collaborate'),
-        name='ipython-notebook-collaborate')
+        name='ipython-notebook-collaborate'),
+    url("subplots/$",
+        IPythonNotebookPage.as_view(
+            lang='ipython-notebooks',
+            notebook='make_subplots'),
+        name='ipython-notebook-make_subplots')
 )
