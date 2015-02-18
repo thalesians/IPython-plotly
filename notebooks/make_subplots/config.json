@@ -2,7 +2,7 @@
     "title": "Python Subplots with Plotly and make_subplots",
     "title_short": "subplots",
     "meta_description": "An IPython notebook illustrating how to make subplots with Plotly and Python.",
-    "cells": [0, -1],
+    "cells": [0, -2],
     "relative_url": "subplots",
     "thumbnail_image": "",
     "non_pip_deps": [
