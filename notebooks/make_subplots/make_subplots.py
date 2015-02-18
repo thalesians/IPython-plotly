@@ -240,11 +240,3 @@ py.iplot(fig, filename='subplot example')
 # 
 
 # ### Questions? <support@plot.ly>, [@plotlygraphs](https://twitter.com/plotlygraphs)
-
-# In[ ]:
-
-from IPython.display import display, HTML
-import urllib2
-url = 'https://raw.githubusercontent.com/plotly/python-user-guide/master/custom.css'
-display(HTML(urllib2.urlopen(url).read()))
-
