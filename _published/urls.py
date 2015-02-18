@@ -14,5 +14,10 @@ urlpatterns = patterns(
         IPythonNotebookPage.as_view(
             lang='ipython-notebooks',
             notebook='collaborate'),
-        name='ipython-notebook-collaborate')
+        name='ipython-notebook-collaborate'),
+    url("network-graphs/$",
+        IPythonNotebookPage.as_view(
+            lang='ipython-notebooks',
+            notebook='networkx'),
+        name='ipython-notebook-networkx')
 )

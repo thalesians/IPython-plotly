@@ -1,6 +1,7 @@
 {
     "notebooks": [
         "basemap",
-        "collaborate"
+        "collaborate",
+        "networkx"
     ]
 }
