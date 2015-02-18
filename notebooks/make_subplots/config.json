@@ -1,0 +1,7 @@
+{
+    "title": "Python Subplots with Plotly and make_subplots",
+    "title_short": "subplots",
+    "meta_description": "An IPython notebook illustrating how to make subplots with Plotly and Python.",
+    "cells": [0, -1],
+    "relative_url": "subplots"  // url from /IPython-Notebooks/
+}
