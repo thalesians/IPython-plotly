@@ -2,7 +2,7 @@
     "meta_description": "An IPython notebook illustrating how to make subplots with Plotly and Python.", 
     "github_url": "https://github.com/plotly/IPython-plotly/blob/master/notebooks/make_subplots", 
     "title_short": "subplots", 
-    "last_modified": "Wednesday 18 February 2015", 
+    "last_modified": "Thursday 19 February 2015", 
     "file_ipynb": "https://raw.githubusercontent.com/plotly/IPython-plotly/master/notebooks/make_subplots/make_subplots.ipynb", 
     "title": "Python Subplots with Plotly and make_subplots", 
     "file_py": "https://raw.githubusercontent.com/plotly/IPython-plotly/master/notebooks/make_subplots/make_subplots.py"
