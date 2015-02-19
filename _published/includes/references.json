@@ -19,6 +19,12 @@
     }, 
     "splash": [
         {
+            "title_short": "plotly and networkx", 
+            "thumbnail_image": "", 
+            "relative_url": "network-graphs", 
+            "title": "Network Graphs with the networkx and plotly Python Modules"
+        }, 
+        {
             "title_short": "subplots", 
             "thumbnail_image": "", 
             "relative_url": "subplots", 
@@ -35,18 +41,12 @@
             "thumbnail_image": "", 
             "relative_url": "collaboration", 
             "title": "Collaboration with Plotly using Python, R and MATLAB"
-        }, 
-        {
-            "title_short": "plotly and networkx", 
-            "thumbnail_image": "", 
-            "relative_url": "network-graphs", 
-            "title": "Network Graphs with the networkx and plotly Python Modules"
         }
     ], 
     "notebooks": [
+        "networkx", 
         "make_subplots", 
         "basemap", 
-        "collaborate", 
-        "networkx"
+        "collaborate"
     ]
 }

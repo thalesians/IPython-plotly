@@ -1,8 +1,8 @@
 {
     "notebooks": [
+        "networkx",
         "make_subplots",
         "basemap",
-        "collaborate",
-        "networkx"
+        "collaborate"
     ]
 }
