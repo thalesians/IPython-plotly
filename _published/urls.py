@@ -5,6 +5,11 @@ from api_docs.views import IPythonNotebookPage
 
 urlpatterns = patterns(
     '',
+    url("network-graphs/$",
+        IPythonNotebookPage.as_view(
+            lang='ipython-notebooks',
+            notebook='networkx'),
+        name='ipython-notebook-networkx'),
     url("subplots/$",
         IPythonNotebookPage.as_view(
             lang='ipython-notebooks',

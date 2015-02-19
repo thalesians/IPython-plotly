@@ -11,9 +11,19 @@
         "basemap": {
             "body": "api_docs/includes/ipython_notebooks/basemap/body.html", 
             "config": "api_docs/includes/ipython_notebooks/basemap/config.json"
+        }, 
+        "networkx": {
+            "body": "api_docs/includes/ipython_notebooks/networkx/body.html", 
+            "config": "api_docs/includes/ipython_notebooks/networkx/config.json"
         }
     }, 
     "splash": [
+        {
+            "title_short": "plotly and networkx", 
+            "thumbnail_image": "", 
+            "relative_url": "network-graphs", 
+            "title": "Network Graphs with the networkx and plotly Python Modules"
+        }, 
         {
             "title_short": "subplots", 
             "thumbnail_image": "", 
@@ -34,6 +44,7 @@
         }
     ], 
     "notebooks": [
+        "networkx", 
         "make_subplots", 
         "basemap", 
         "collaborate"

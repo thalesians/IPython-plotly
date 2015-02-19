@@ -1,0 +1,114 @@
+<div class="border-box-sizing" id="notebook" tabindex="-1">
+  <div class="container" id="notebook-container">
+   <div class="cell border-box-sizing code_cell rendered">
+    <div class="input">
+     <div class="prompt input_prompt" id="In-[1]">
+      <a class="prompt input_prompt" href="#In-[1]">
+       In [1]:
+      </a>
+     </div>
+     <div class="inner_cell">
+      <div class="input_area">
+       <div class="highlight">
+        <pre><span class="kn">import</span> <span class="nn">networkx</span> <span class="kn">as</span> <span class="nn">nx</span>
+
+<span class="kn">import</span> <span class="nn">plotly.plotly</span> <span class="kn">as</span> <span class="nn">py</span>
+<span class="kn">from</span> <span class="nn">plotly.graph_objs</span> <span class="kn">import</span> <span class="o">*</span>
+</pre>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="cell border-box-sizing code_cell rendered">
+    <div class="input">
+     <div class="prompt input_prompt" id="In-[2]">
+      <a class="prompt input_prompt" href="#In-[2]">
+       In [2]:
+      </a>
+     </div>
+     <div class="inner_cell">
+      <div class="input_area">
+       <div class="highlight">
+        <pre><span class="n">G</span><span class="o">=</span><span class="n">nx</span><span class="o">.</span><span class="n">random_geometric_graph</span><span class="p">(</span><span class="mi">200</span><span class="p">,</span><span class="mf">0.125</span><span class="p">)</span>
+</pre>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="cell border-box-sizing code_cell rendered">
+    <div class="input">
+     <div class="prompt input_prompt" id="In-[3]">
+      <a class="prompt input_prompt" href="#In-[3]">
+       In [3]:
+      </a>
+     </div>
+     <div class="inner_cell">
+      <div class="input_area">
+       <div class="highlight">
+        <pre><span class="c"># add the edges in as disconnected lines in a single trace</span>
+<span class="n">edge_trace</span> <span class="o">=</span> <span class="n">Scatter</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="p">[],</span> <span class="n">y</span><span class="o">=</span><span class="p">[],</span> <span class="n">mode</span><span class="o">=</span><span class="s">'lines'</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">edge</span> <span class="ow">in</span> <span class="n">G</span><span class="o">.</span><span class="n">edges</span><span class="p">():</span>
+    <span class="n">x0</span><span class="p">,</span> <span class="n">y0</span> <span class="o">=</span> <span class="n">G</span><span class="o">.</span><span class="n">node</span><span class="p">[</span><span class="n">edge</span><span class="p">[</span><span class="mi">0</span><span class="p">]][</span><span class="s">'pos'</span><span class="p">]</span>
+    <span class="n">x1</span><span class="p">,</span> <span class="n">y1</span> <span class="o">=</span> <span class="n">G</span><span class="o">.</span><span class="n">node</span><span class="p">[</span><span class="n">edge</span><span class="p">[</span><span class="mi">1</span><span class="p">]][</span><span class="s">'pos'</span><span class="p">]</span>
+    <span class="n">edge_trace</span><span class="p">[</span><span class="s">'x'</span><span class="p">]</span> <span class="o">+=</span> <span class="p">[</span><span class="n">x0</span><span class="p">,</span> <span class="n">x1</span><span class="p">,</span> <span class="bp">None</span><span class="p">]</span>
+    <span class="n">edge_trace</span><span class="p">[</span><span class="s">'y'</span><span class="p">]</span> <span class="o">+=</span> <span class="p">[</span><span class="n">y0</span><span class="p">,</span> <span class="n">y1</span><span class="p">,</span> <span class="bp">None</span><span class="p">]</span>
+
+<span class="c"># add the nodes in as a scatter</span>
+<span class="n">node_trace</span> <span class="o">=</span> <span class="n">Scatter</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="p">[],</span> <span class="n">y</span><span class="o">=</span><span class="p">[],</span> <span class="n">mode</span><span class="o">=</span><span class="s">'markers'</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="n">Marker</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="p">[]))</span>
+<span class="k">for</span> <span class="n">node</span> <span class="ow">in</span> <span class="n">G</span><span class="o">.</span><span class="n">nodes</span><span class="p">():</span>
+    <span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">G</span><span class="o">.</span><span class="n">node</span><span class="p">[</span><span class="n">node</span><span class="p">][</span><span class="s">'pos'</span><span class="p">]</span>
+    <span class="n">node_trace</span><span class="p">[</span><span class="s">'x'</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+    <span class="n">node_trace</span><span class="p">[</span><span class="s">'y'</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+
+<span class="c"># size the node points by the number of connections</span>
+<span class="k">for</span> <span class="n">node</span><span class="p">,</span> <span class="n">adjacencies</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">G</span><span class="o">.</span><span class="n">adjacency_list</span><span class="p">()):</span>
+    <span class="n">node_trace</span><span class="p">[</span><span class="s">'marker'</span><span class="p">][</span><span class="s">'size'</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">adjacencies</span><span class="p">))</span>
+</pre>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="cell border-box-sizing code_cell rendered">
+    <div class="input">
+     <div class="prompt input_prompt" id="In-[4]">
+      <a class="prompt input_prompt" href="#In-[4]">
+       In [4]:
+      </a>
+     </div>
+     <div class="inner_cell">
+      <div class="input_area">
+       <div class="highlight">
+        <pre><span class="c"># create a figure so we can customize a couple more things</span>
+<span class="n">fig</span> <span class="o">=</span> <span class="n">Figure</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">Data</span><span class="p">([</span><span class="n">edge_trace</span><span class="p">,</span> <span class="n">node_trace</span><span class="p">]),</span>
+             <span class="n">layout</span><span class="o">=</span><span class="n">Layout</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s">'random geometric graph from networkx'</span><span class="p">,</span> <span class="n">plot_bgcolor</span><span class="o">=</span><span class="s">"rgb(217, 217, 217)"</span><span class="p">,</span>
+                           <span class="n">showlegend</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span> <span class="n">xaxis</span><span class="o">=</span><span class="n">XAxis</span><span class="p">(</span><span class="n">showgrid</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span> <span class="n">zeroline</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span> <span class="n">showticklabels</span><span class="o">=</span><span class="bp">False</span><span class="p">),</span>
+                           <span class="n">yaxis</span><span class="o">=</span><span class="n">YAxis</span><span class="p">(</span><span class="n">showgrid</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span> <span class="n">zeroline</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span> <span class="n">showticklabels</span><span class="o">=</span><span class="bp">False</span><span class="p">)))</span>
+
+<span class="c"># send the figure to Plotly and embed an iframe in this notebook</span>
+<span class="n">py</span><span class="o">.</span><span class="n">iplot</span><span class="p">(</span><span class="n">fig</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="s">'networkx'</span><span class="p">)</span>
+</pre>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="output_wrapper">
+     <div class="output">
+      <div class="output_area">
+       <div class="prompt output_prompt" id="Out[4]">
+        <a class="prompt output_prompt" href="#Out[4]">
+         Out[4]:
+        </a>
+       </div>
+       <div class="output_html rendered_html output_subarea output_pyout">
+        <iframe height="525" id="igraph" scrolling="no" seamless="seamless" src="https://plot.ly/~theengineear/2801.embed" style="border:none;" width="100%">
+        </iframe>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
