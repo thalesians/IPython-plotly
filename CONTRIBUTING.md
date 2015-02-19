@@ -52,7 +52,7 @@ See [model](_makescripts/data/config-init.json).
 
 `notebooks/references.json` 
 
-Simply fill in the notebook id. 
+Simply fill in the notebook id:
 
 ```json
 {
@@ -63,17 +63,27 @@ Simply fill in the notebook id.
 }
 ```
 
-These *need* to be hard-coded in order to preserve the order in which they will apper on the splash page.
+- These *need* to be hard-coded in order to preserve the order in which they will
+appear on the splash page.
+
+- **As of Feb 19 2015**, please put the latest notebook should be the
+  `notebooks[0]` item in order to appear at the top of the list on
+  [/ipython-notebooks](https://plot.ly/ipython-notebooks/).
 
 
 ## How to add a notebook?
 
 #### Step 0: Make a directory and add ipynb file
 
+- **As of Feb 19 2015**, make sure that the `ipynb` file has been ran. The
+  notebook is not ran in this process (possibly later), its in and out cell are
+  only converted.
+
 #### Step 1: Install requirements
 
 ```
 pip install -r requirements.txt
+pip install beautifulsoup4
 ```
 
 #### Step 2: 
@@ -82,7 +92,12 @@ pip install -r requirements.txt
 make init nb=<notebook-id>
 ```
 
-and fill in `config.json` (don't forget to remove the comments from the json file).
+and fill in the generated notebook `config.json` 
+
+- **don't forget to remove the comments from the json file**
+
+- If the `title` attributes is longer than 50 character, consider including 
+  `\n` to make the title appears on two lines.
 
 #### Step 3:
 
@@ -99,7 +114,9 @@ This creates an `html` and `py` version of the notebook
 make publish nb=<notebook-id>
 ```
 
-This puts the html into publishable form, generates the `urls.py` and `sitemaps.py` files and appends the config and references files with auto-generatable fields.
+This puts the html into publishable form, generates the `urls.py` and
+`sitemaps.py` files and appends the config and references files with
+auto-generatable fields.
 
 
 #### Step 5:
