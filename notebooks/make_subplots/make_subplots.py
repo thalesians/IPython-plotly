@@ -83,13 +83,13 @@ py.iplot(fig, filename='6x6 shared')
 
 # ### insets
 
-# In[ ]:
+# In[10]:
 
 fig = tools.make_subplots(insets=[{'cell': (1,1), 'l': 0.7, 'b': 0.7}],
                           print_grid=True)
 
 
-# In[ ]:
+# In[11]:
 
 fig.append_trace(Scatter(x=[1,2,3], y=[2,1,2]), 1, 1)
 fig['data'] += [Scatter(x=[1,2,3], y=[2,1,2], xaxis='x2', yaxis='y2')]
@@ -98,7 +98,7 @@ py.iplot(fig, filename='inset example')
 
 # ### spanning columns
 
-# In[ ]:
+# In[12]:
 
 fig = tools.make_subplots(rows=2, cols=2,
                           specs=[[{}, {}],
@@ -106,7 +106,7 @@ fig = tools.make_subplots(rows=2, cols=2,
                           print_grid=True)
 
 
-# In[ ]:
+# In[13]:
 
 fig.append_trace(Scatter(x=[1,2,3], y=[2,1,2]), row=1, col=1)
 fig.append_trace(Scatter(x=[1,2,3], y=[2,1,2]), row=1, col=2)
@@ -117,7 +117,7 @@ py.iplot(fig, filename='irregular spacing')
 
 # ### unique arrangements
 
-# In[ ]:
+# In[14]:
 
 fig = tools.make_subplots(rows=5, cols=2,
                           specs=[[{}, {'rowspan': 2}],
@@ -128,7 +128,7 @@ fig = tools.make_subplots(rows=5, cols=2,
                           print_grid=True)
 
 
-# In[ ]:
+# In[15]:
 
 fig.append_trace(Scatter(x=[1,2],y=[1,4],name='(1,1)'),  1, 1)
 fig.append_trace(Scatter(x=[1,2],y=[1,4],name='(2,1)'),  2, 1)
@@ -147,33 +147,33 @@ py.iplot(fig, filename='subplot unique arrangement')
 # 
 # Need some help? Call `help`
 
-# In[ ]:
+# In[16]:
 
 help(tools.make_subplots)
 
 
-# In[ ]:
+# In[17]:
 
 fig = tools.make_subplots(rows=2)
 
 
 # `fig` is a subclass of a `dict`
 
-# In[ ]:
+# In[18]:
 
 print fig
 
 
 # `to.string()` pretty prints the object
 
-# In[ ]:
+# In[19]:
 
 print fig.to_string()
 
 
 # `fig` subclasses a `dict`, so access members just like you would in a `dict`
 
-# In[ ]:
+# In[20]:
 
 fig['layout']
 
@@ -184,7 +184,7 @@ fig['layout']
 # 
 # for example, you can't initialize a `Figure` with an invalid key. we'll throw an exception.
 
-# In[ ]:
+# In[21]:
 
 import traceback
 try:
@@ -195,31 +195,31 @@ except:
 
 # so, which keys are accepted? call `help`! also check out [https://plot.ly/python/reference/](https://plot.ly/python/reference/)
 
-# In[ ]:
+# In[22]:
 
 help(fig['layout'])
 
 
-# In[ ]:
+# In[23]:
 
 fig['layout']['title'] = 'two subplots'
 
 
 # `fig.append_trace` is a helper function for binding trace objects to axes. need some help? call `help`!
 
-# In[ ]:
+# In[24]:
 
 help(fig.append_trace)
 
 
-# In[ ]:
+# In[25]:
 
 fig.append_trace(Scatter(x=[1,2,3], y=[2,1,2], name='top trace'), row=1, col=1) # (row, col) match with the subplot arrangment that was printed out
 fig.append_trace(Scatter(x=[1,2,3], y=[2,1,2], name='bottom trace'), row=2, col=1)
 print fig
 
 
-# In[ ]:
+# In[26]:
 
 print fig.to_string()
 
@@ -228,7 +228,7 @@ print fig.to_string()
 # 
 # to view this graph, send it over to your plotly account
 
-# In[ ]:
+# In[27]:
 
 py.iplot(fig, filename='subplot example')
 

@@ -2,8 +2,8 @@
     "meta_description": "An IPython notebook showing how to use networkx to generate network graphs through Plotly's Python library.", 
     "github_url": "https://github.com/plotly/IPython-plotly/blob/master/notebooks/networkx", 
     "title_short": "plotly and networkx", 
-    "last_modified": "Wednesday 18 February 2015", 
+    "last_modified": "Thursday 19 February 2015", 
     "file_ipynb": "https://raw.githubusercontent.com/plotly/IPython-plotly/master/notebooks/networkx/networkx.ipynb", 
-    "title": "Network Graphs with the networkx and plotly Python Modules", 
+    "title": "Network Graphs with the networkx and\n plotly Python Modules", 
     "file_py": "https://raw.githubusercontent.com/plotly/IPython-plotly/master/notebooks/networkx/networkx.py"
 }
