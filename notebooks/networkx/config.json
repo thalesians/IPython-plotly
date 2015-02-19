@@ -1,5 +1,5 @@
 {
-	"title": "Network Graphs with the networkx and plotly Python Modules",
+	"title": "Network Graphs with the networkx and\n plotly Python Modules",
 	"title_short": "plotly and networkx",
 	"meta_description": "An IPython notebook showing how to use networkx to generate network graphs through Plotly's Python library.",
 	"relative_url": "network-graphs",
