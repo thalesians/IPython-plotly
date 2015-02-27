@@ -3,7 +3,7 @@
     "title_short": "",  // on page breadcrumb and below thumbnail
     "meta_description": "",  // <meta description>
     "cells": [0, -1], // start/end indices of the cells to be published
-    "relative_url": ""  // url from /IPython-Notebooks/
+    "relative_url": "",  // url from /IPython-Notebooks/
     "thumbnail_image": "",  // path to thumbnail image
     "non_pip_deps": [
         {   // dependencies that can't we installed with pip
@@ -11,5 +11,5 @@
             "urls": "",        // ["urls", "to", "more", "info"]
             "description": ""  // "a short description about this dependency"
         }
-    ],
+    ]
 }
