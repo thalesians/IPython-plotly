@@ -3,7 +3,7 @@
     "title_short": "CartoDB + Plotly",
     "meta_description": "CartoDB and Plotly mashup using the Plotly, CartoDB, Pandas, and IPython Notebooks",
     "cells": [0, -1],
-    "relative_url": "",
+    "relative_url": "cartodb",
     "thumbnail_image": "",
     "non_pip_deps": [
         {

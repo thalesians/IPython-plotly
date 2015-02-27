@@ -1,9 +1,9 @@
 {
     "notebooks": [
+        "cartodb",
         "networkx",
         "make_subplots",
         "basemap",
-        "collaborate",
-        "cartodb"
+        "collaborate"
     ]
 }

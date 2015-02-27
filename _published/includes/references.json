@@ -23,6 +23,12 @@
     }, 
     "splash": [
         {
+            "title_short": "CartoDB + Plotly", 
+            "thumbnail_image": "", 
+            "relative_url": "cartodb", 
+            "title": "CartoDB and Plotly"
+        }, 
+        {
             "title_short": "plotly and networkx", 
             "thumbnail_image": "", 
             "relative_url": "network-graphs", 
@@ -45,19 +51,13 @@
             "thumbnail_image": "", 
             "relative_url": "collaboration", 
             "title": "Collaboration with Plotly using Python, R and MATLAB"
-        }, 
-        {
-            "title_short": "CartoDB + Plotly", 
-            "thumbnail_image": "", 
-            "relative_url": "", 
-            "title": "CartoDB and Plotly"
         }
     ], 
     "notebooks": [
+        "cartodb", 
         "networkx", 
         "make_subplots", 
         "basemap", 
-        "collaborate", 
-        "cartodb"
+        "collaborate"
     ]
 }
