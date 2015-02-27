@@ -1,5 +1,9 @@
 {
     "paths": {
+        "cartodb": {
+            "body": "api_docs/includes/ipython_notebooks/cartodb/body.html", 
+            "config": "api_docs/includes/ipython_notebooks/cartodb/config.json"
+        }, 
         "make_subplots": {
             "body": "api_docs/includes/ipython_notebooks/make_subplots/body.html", 
             "config": "api_docs/includes/ipython_notebooks/make_subplots/config.json"
@@ -41,12 +45,19 @@
             "thumbnail_image": "", 
             "relative_url": "collaboration", 
             "title": "Collaboration with Plotly using Python, R and MATLAB"
+        }, 
+        {
+            "title_short": "CartoDB + Plotly", 
+            "thumbnail_image": "", 
+            "relative_url": "", 
+            "title": "CartoDB and Plotly"
         }
     ], 
     "notebooks": [
         "networkx", 
         "make_subplots", 
         "basemap", 
-        "collaborate"
+        "collaborate", 
+        "cartodb"
     ]
 }

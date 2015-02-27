@@ -1,0 +1,9 @@
+{
+    "meta_description": "CartoDB and Plotly mashup using the Plotly, CartoDB, Pandas, and IPython Notebooks", 
+    "github_url": "https://github.com/plotly/IPython-plotly/blob/master/notebooks/cartodb", 
+    "title_short": "CartoDB + Plotly", 
+    "last_modified": "Friday 27 February 2015", 
+    "file_ipynb": "https://raw.githubusercontent.com/plotly/IPython-plotly/master/notebooks/cartodb/cartodb.ipynb", 
+    "title": "CartoDB and Plotly", 
+    "file_py": "https://raw.githubusercontent.com/plotly/IPython-plotly/master/notebooks/cartodb/cartodb.py"
+}
