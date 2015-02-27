@@ -1,5 +1,9 @@
 {
     "paths": {
+        "cartodb": {
+            "body": "api_docs/includes/ipython_notebooks/cartodb/body.html", 
+            "config": "api_docs/includes/ipython_notebooks/cartodb/config.json"
+        }, 
         "make_subplots": {
             "body": "api_docs/includes/ipython_notebooks/make_subplots/body.html", 
             "config": "api_docs/includes/ipython_notebooks/make_subplots/config.json"
@@ -18,6 +22,12 @@
         }
     }, 
     "splash": [
+        {
+            "title_short": "CartoDB + Plotly", 
+            "thumbnail_image": "", 
+            "relative_url": "cartodb", 
+            "title": "CartoDB and Plotly"
+        }, 
         {
             "title_short": "plotly and networkx", 
             "thumbnail_image": "", 
@@ -44,6 +54,7 @@
         }
     ], 
     "notebooks": [
+        "cartodb", 
         "networkx", 
         "make_subplots", 
         "basemap", 

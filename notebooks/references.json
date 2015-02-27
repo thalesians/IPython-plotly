@@ -1,5 +1,6 @@
 {
     "notebooks": [
+        "cartodb",
         "networkx",
         "make_subplots",
         "basemap",

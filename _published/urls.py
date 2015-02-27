@@ -5,6 +5,11 @@ from api_docs.views import IPythonNotebookPage
 
 urlpatterns = patterns(
     '',
+    url("cartodb/$",
+        IPythonNotebookPage.as_view(
+            lang='ipython-notebooks',
+            notebook='cartodb'),
+        name='ipython-notebook-cartodb'),
     url("network-graphs/$",
         IPythonNotebookPage.as_view(
             lang='ipython-notebooks',
