@@ -3,6 +3,10 @@ Plotly IPython Notebooks
 
 See them on [plot.ly](http://plot.ly/ipython-notebooks).
 
+##### Want to add a notebook?
+
+See [CONTRIBUTING.md](./CONTRIBUTING.md).
+
 
 #####Questions?
 
