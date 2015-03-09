@@ -75,9 +75,13 @@ appear on the splash page.
 
 #### Step 0: Make a directory and add ipynb file
 
-- **As of Feb 19 2015**, make sure that the `ipynb` file has been ran. The
-  notebook is not ran in this process (possibly later), its in and out cell are
-  only converted.
+**As of Feb 19 2015**:
+
+- As displayed [above](#repo-structure), the `ipynb` file must have the same
+  name as its `notebooks/` sub-directory.
+
+- Make sure that the `ipynb` file has been ran. The notebook is not ran in this
+  process (possibly later), its in and out cell are only converted.
 
 #### Step 1: Install requirements
 
@@ -94,7 +98,7 @@ make init nb=<notebook-id>
 
 and fill in the generated notebook `config.json` 
 
-- **don't forget to remove the comments from the json file**
+- **Don't forget to remove the comments from the json file**
 
 - If the `title` attributes is longer than 50 character, consider including 
   `\n` to make the title appears on two lines.
@@ -119,7 +123,12 @@ This puts the html into publishable form, generates the `urls.py` and
 auto-generatable fields.
 
 
-#### Step 5:
+#### Step 5: 
+
+Commit all unignored files and make a PR. 
+
+
+#### Step 6 (for plotly employees only)
 
 ```
 make push
