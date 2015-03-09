@@ -12,16 +12,26 @@
             "body": "api_docs/includes/ipython_notebooks/collaborate/body.html", 
             "config": "api_docs/includes/ipython_notebooks/collaborate/config.json"
         }, 
-        "basemap": {
-            "body": "api_docs/includes/ipython_notebooks/basemap/body.html", 
-            "config": "api_docs/includes/ipython_notebooks/basemap/config.json"
-        }, 
         "networkx": {
             "body": "api_docs/includes/ipython_notebooks/networkx/body.html", 
             "config": "api_docs/includes/ipython_notebooks/networkx/config.json"
+        }, 
+        "markowitz": {
+            "body": "api_docs/includes/ipython_notebooks/markowitz/body.html", 
+            "config": "api_docs/includes/ipython_notebooks/markowitz/config.json"
+        }, 
+        "basemap": {
+            "body": "api_docs/includes/ipython_notebooks/basemap/body.html", 
+            "config": "api_docs/includes/ipython_notebooks/basemap/config.json"
         }
     }, 
     "splash": [
+        {
+            "title_short": "Markowitz portfolio optimization", 
+            "thumbnail_image": "", 
+            "relative_url": "markowitz-portfolio-optimization", 
+            "title": "Markowitz portfolio optimization"
+        }, 
         {
             "title_short": "CartoDB + Plotly", 
             "thumbnail_image": "", 
@@ -54,6 +64,7 @@
         }
     ], 
     "notebooks": [
+        "markowitz", 
         "cartodb", 
         "networkx", 
         "make_subplots", 
