@@ -1,5 +1,6 @@
 {
     "notebooks": [
+        "markowitz",
         "cartodb",
         "networkx",
         "make_subplots",

@@ -1,0 +1,15 @@
+{
+    "title": "Markowitz portfolio optimization",
+    "title_short": "Markowitz portfolio optimization",
+    "meta_description": "Tutorial on the basic idea behind Markowitz portfolio optimization and how to do it with Python and plotly.",
+    "cells": [0, "end"],
+    "relative_url": "markowitz-portfolio-optimization",
+    "thumbnail_image": "",
+    "non_pip_deps": [
+        {
+            "name": "" ,
+            "urls": "",
+            "description": ""
+        }
+    ]
+}
