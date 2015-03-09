@@ -30,15 +30,14 @@ sitemaps=$(path_to_streambed)"/shelly/api_docs/sitemaps/ipython_notebooks/sitema
 # Examples:
 #
 # make <target> nb=<some-notebook-folder>
-# make <target> nb="<some-notebook-folder> <another-notebook>"
-# make <target> nb=* (coming soon)
+#
+# N.B. Each target must be ran one notebook at a time
 #
 #-------------------------------------------------------------------------------
 
 init:
 	@cp $(path_to_makedata)/config-init.json $(path_to_notebooks)/$(nb)/config.json
 
-# This target must be one notebook at a time run
 run:
 	@ipython $(path_to_makescripts)/trim.py $(nb)
 	@cd $(path_to_notebooks)/$(nb) && ipython nbconvert --to html $(nb).tmp.ipynb
@@ -47,6 +46,8 @@ run:
 	
 publish:
 	@ipython $(path_to_makescripts)/publish.py $(nb) --pdb
+
+run-publish: run publish
 
 push:
 	@rm -rf $(includes)/*
