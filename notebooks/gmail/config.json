@@ -1,0 +1,15 @@
+{
+    "title": "Graph Gmail inbox data with IPython notebook",
+    "title_short": "Graph Gmail inbox data",
+    "meta_description": "Learn how to graph your Gmail inbox data with plotly and IPython Notebook",
+    "cells": [1, -2],
+    "relative_url": "graph-gmail-inbox-data",
+    "thumbnail_image": "",
+    "non_pip_deps": [
+        {
+            "name": "" ,
+            "urls": "",
+            "description": ""
+        }
+    ]
+}
