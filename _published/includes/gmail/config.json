@@ -1,0 +1,9 @@
+{
+    "meta_description": "Learn how to graph your Gmail inbox data with plotly and IPython Notebook", 
+    "github_url": "https://github.com/plotly/IPython-plotly/blob/master/notebooks/gmail", 
+    "title_short": "Graph Gmail inbox data", 
+    "last_modified": "Thursday 12 March 2015", 
+    "file_ipynb": "https://raw.githubusercontent.com/plotly/IPython-plotly/master/notebooks/gmail/gmail.ipynb", 
+    "title": "Graph Gmail inbox data with IPython notebook", 
+    "file_py": "https://raw.githubusercontent.com/plotly/IPython-plotly/master/notebooks/gmail/gmail.py"
+}

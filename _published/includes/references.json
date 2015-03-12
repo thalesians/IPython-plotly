@@ -23,9 +23,19 @@
         "basemap": {
             "body": "api_docs/includes/ipython_notebooks/basemap/body.html", 
             "config": "api_docs/includes/ipython_notebooks/basemap/config.json"
+        }, 
+        "gmail": {
+            "body": "api_docs/includes/ipython_notebooks/gmail/body.html", 
+            "config": "api_docs/includes/ipython_notebooks/gmail/config.json"
         }
     }, 
     "splash": [
+        {
+            "title_short": "Graph Gmail inbox data", 
+            "thumbnail_image": "", 
+            "relative_url": "graph-gmail-inbox-data", 
+            "title": "Graph Gmail inbox data with IPython notebook"
+        }, 
         {
             "title_short": "Markowitz portfolio optimization", 
             "thumbnail_image": "", 
@@ -64,6 +74,7 @@
         }
     ], 
     "notebooks": [
+        "gmail", 
         "markowitz", 
         "cartodb", 
         "networkx", 
