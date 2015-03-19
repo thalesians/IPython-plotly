@@ -5,6 +5,11 @@ from api_docs.views import IPythonNotebookPage
 
 urlpatterns = patterns(
     '',
+    url("salesforce/$",
+        IPythonNotebookPage.as_view(
+            lang='ipython-notebooks',
+            notebook='salesforce'),
+        name='ipython-notebook-salesforce'),
     url("graph-gmail-inbox-data/$",
         IPythonNotebookPage.as_view(
             lang='ipython-notebooks',

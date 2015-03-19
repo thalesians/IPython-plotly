@@ -3,11 +3,11 @@
 
 # # Interactive Salesforce Graphing
 # 
-# Salesforce reports are great for getting a handle on the numbers but [Plotly](http://plot.ly/) allows for interactivity not built into the Reports Module in Salesforce. Luckily Salesforce has amazing tools around exporting data, from excel and csv files to a robust and reliable API. With [Simple Salesforce](https://github.com/neworganizing/simple-salesforce), it's simple to make REST calls to the Salesforce API and get your hands on data to make real time, interactive dashboards.
+# Salesforce reports are great for getting a handle on the numbers but [Plotly](https://plot.ly/) allows for interactivity not built into the Reports Module in Salesforce. Luckily Salesforce has amazing tools around exporting data, from excel and csv files to a robust and reliable API. With [Simple Salesforce](https://github.com/neworganizing/simple-salesforce), it's simple to make REST calls to the Salesforce API and get your hands on data to make real time, interactive dashboards.
 # 
 # This notebook walks you through that basic process of getting something like that set up. 
 # 
-# First you'll need [Plotly](http://plot.ly/). Plotly is a free web-based platform for making graphs. You can keep graphs private, make them public, and run Plotly on your own servers (https://plot.ly/product/enterprise/). To get started visit https://plot.ly/python/getting-started/ . It's simple interface makes it easy to get interactive graphics done quickly.
+# First you'll need [Plotly](https://plot.ly/). Plotly is a free web-based platform for making graphs. You can keep graphs private, make them public, and run Plotly on your own servers (https://plot.ly/product/enterprise/). To get started visit https://plot.ly/python/getting-started/ . It's simple interface makes it easy to get interactive graphics done quickly.
 # 
 # You'll also need a Salesforce Developer (or regular Salesforce Account). [You can get a salesforce developer account for free](https://developer.salesforce.com/signup) at their developer portal.
 
@@ -207,3 +207,13 @@ layout = Layout(
 fig = Figure(data=data, layout=layout)
 py.iplot(fig, filename='salesforce/open-large-deals-scatter')
 
+
+# Plotly makes it easy to create many different kinds of charts. The above graph shows the deals in the pipeline over the coming months. The larger the bubble, the more likely it is to close. Hover over the bubbles to see that data. This graph is ideal for a sales manager to see how each of his sales reps are doing over the coming months.
+# 
+# One of the benefits of Plotly is the availability of features. it's easy to make things like live updating dashboards for managers. 
+# 
+# Learn more advanced features below:
+# 
+# - [Live update Plotly graphs in Python with cron jobs](http://moderndata.plot.ly/update-plotly-charts-with-cron-jobs-and-python/)
+# - [Graph mysql data with Plotly and Python](http://moderndata.plot.ly/graph-data-from-mysql-database-in-python/)
+# - [More on creating web-based visualizations in Python with Plotly](https://plot.ly/python/)
