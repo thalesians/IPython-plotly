@@ -100,8 +100,12 @@ and fill in the generated notebook `config.json`
 
 - **Don't forget to remove the comments from the json file**
 
+- Sentence case are encouraged for the `title` and `title_short` fields
+
 - If the `title` attributes is longer than 50 character, consider including 
   `\n` to make the title appears on two lines.
+
+- To include all cells in the published notebook set `cells: [0, "end"]`. Alternatively, set `cells: [0, -1]` to include all cells but the last.
 
 #### Step 3:
 
