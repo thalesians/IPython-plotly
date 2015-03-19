@@ -1,0 +1,15 @@
+{
+    "title": "Interactive Graphing with Salesforce",
+    "title_short": "Interactive Graphing with Salesforce",
+    "meta_description": "Create interactive graphs with salesforce and plotly",
+    "cells": [0, -1],
+    "relative_url": "salesforce",
+    "thumbnail_image": "",
+    "non_pip_deps": [
+        {
+            "name": "" ,
+            "urls": "",
+            "description": ""
+        }
+    ]
+}
